@@ -61,7 +61,7 @@ declare global {
   }
 
   interface StencilIntrinsicElements {
-    'app-Articles': Components.AppArticlesAttributes;
+    'app-articles': Components.AppArticlesAttributes;
     'app-details': Components.AppDetailsAttributes;
     'app-home': Components.AppHomeAttributes;
     'app-modif': Components.AppModifAttributes;
@@ -107,7 +107,7 @@ declare global {
   };
 
   interface HTMLElementTagNameMap {
-    'app-Articles': HTMLAppArticlesElement
+    'app-articles': HTMLAppArticlesElement
     'app-details': HTMLAppDetailsElement
     'app-home': HTMLAppHomeElement
     'app-modif': HTMLAppModifElement
@@ -116,7 +116,7 @@ declare global {
   }
 
   interface ElementTagNameMap {
-    'app-Articles': HTMLAppArticlesElement;
+    'app-articles': HTMLAppArticlesElement;
     'app-details': HTMLAppDetailsElement;
     'app-home': HTMLAppHomeElement;
     'app-modif': HTMLAppModifElement;

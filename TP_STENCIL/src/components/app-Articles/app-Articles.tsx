@@ -39,6 +39,7 @@ export class AppArticles{
 }
   render() {
     return (
+      <div class="pic">
       <div class="form-style-5">
       <form onSubmit={this.handleSubmit}><hr/><fieldset>
       
@@ -56,6 +57,7 @@ export class AppArticles{
         </label><hr/>
         <input type="submit" value="Submit" /></fieldset>
       </form>
+      </div>
       </div>
     );
   }
