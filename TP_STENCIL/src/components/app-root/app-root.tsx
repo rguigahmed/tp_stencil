@@ -3,7 +3,7 @@ import { Component } from '@stencil/core';
 
 @Component({
   tag: 'app-root',
-  styleUrl: 'app-root.css',
+  styleUrl: '../global/global.css',
   shadow: true
 })
 export class AppRoot {
@@ -11,18 +11,24 @@ export class AppRoot {
   render() {
     return (
       <div>
-        <header>
-          <h1>Stencil App Starter</h1>
-        </header>
-
+        
+   
         <main>
           <stencil-router>
             <stencil-route-switch scrollTopOffset={0}>
+           
               <stencil-route url='/' component='app-home' exact={true} />
-              <stencil-route url='/profile/:name' component='app-profile' />
+              <stencil-route url='/Articles/:name' component='app-articles' />
+              <stencil-route url='/details/:id' component='app-details' />
+              <stencil-route url='/supp/:id' component='app-supp' />
+              <stencil-route url='/modif/:id' component='app-modif' />
+
+              
             </stencil-route-switch>
           </stencil-router>
+         
         </main>
+        
       </div>
     );
   }
